@@ -3,7 +3,7 @@
 
 set -e
 
-DOTFILES="$HOME/dotfiles"
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG="$HOME/.config"
 
 echo "==> Installing official packages..."
